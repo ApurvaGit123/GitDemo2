@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.util.concurrent.TimeUnit;
+
 public class SeleniumTest {
 
     public static void main(String[] args) {
@@ -17,7 +19,8 @@ public class SeleniumTest {
         driver.get("https://www.google.com");
         driver.manage().window().maximize();
         driver.findElement(By.xpath("//elemnt")).click();
-        driver.manage().Timeouts().Implicitwait(5,TimeUnits.sec);
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        System.out.println("Made changes in Develop branches");
         driver.close();
 
     }
