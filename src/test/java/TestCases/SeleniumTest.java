@@ -14,6 +14,7 @@ public class SeleniumTest {
         System.setProperty("webdriver.chrome.driver","C:\\Users\\Madhavi\\IdeaProjects\\SeleniumPractice\\Executables\\chromedriver.exe");
         WebDriver driver =new ChromeDriver();
         driver.get("https://www.google.com");
+        driver.manage().window().maximize();
         driver.close();
 
     }
