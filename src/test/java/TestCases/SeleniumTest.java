@@ -17,6 +17,7 @@ public class SeleniumTest {
         driver.get("https://www.google.com");
         driver.manage().window().maximize();
         driver.findElement(By.xpath("//elemnt")).click();
+        driver.manage().Timeouts().Implicitwait(5,TimeUnits.sec);
         driver.close();
 
     }
